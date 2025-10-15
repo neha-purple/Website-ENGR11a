@@ -1,147 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENGR11a</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Josefin Sans', sans-serif;
-            background-color: #fedee9;
-            display: flex;
-            flex-direction: column;
-        }
-        header {
-            background: #761a45;
-            color: #ffffff;
-            padding: 17px 0;
-            text-align: center;
-            text-size-adjust: 100%;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            color: #efbdcf;
-            font-weight: bold;
-        }
-        main {
-            flex: 1;
-            padding: 20px;
-        }
-        section {
-            background: #ffffff;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-            justify-content: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENGR11a Portfolio - Neha Kalakuntla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --main-bg: #fedee9;
+      --primary: #761a45;
+      --light: #ffffff;
+      --text: #333;
+      --accent: #efbdcf;
+    }
 
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #761a45;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--light);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    section {
+      background: var(--light);
+      width: 100%;
+      max-width: 950px;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    section h2 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    .part {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+      align-items: center;
+    }
+
+    .part img {
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      max-width: 160px;
+      height: auto;
+    }
+
+    .part img:hover {
+      transform: scale(1.05);
+    }
+
+    .part p {
+      flex: 1;
+      min-width: 250px;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    p[style*="font-weight:bold"] {
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      background: var(--primary);
+      color: var(--light);
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 1.5rem;
+      }
+      .part {
+        flex-direction: column;
+      }
+      .part img {
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1 style="font-weight: bolder; font-size: 50px">ENGR-11a: Introduction to Design Methodology</h1>
-        <nav>
-            <ul>
-                <li><a href="#pj1">Project 1</a></li>
-                <li><a href="#pj2">Project 2</a></li>
-                <li><a href="#pj3">Project 3</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="pj1" style="justify-content:center;">
-            <h2  style="font-size:25px; font-weight:bolder; margin-left: 30px; margin-right: 30px">Project 1: Introduction to 3D Printing</h2>
-            <div class="part" style="display: flex; align-items: center; justify-content:center;">
-            <div style="justify-content:center;">
-                <p style="font-size: large; font-weight:bold">Part 1: Nametag</p>
-                <p style="text-align:left; text-indent: 40px; padding: 3px;margin-top:0%; justify-content:center;">     I would consider this print successful, although there are noticeable flaws. It came out legible which is the most important element, but there were noticeable flaws. Mainly I had problems with some stringing that I had to clip off afterward. Its not the cleanest result but it still serves its purpose. I think if i scaled it up a little then this problem would not be a concern. If I did this again I would also slow down the print speed for cleaner edges, and polish or paint the surface for a more clean appearance.</p>
-            </div>
-            <img src="images/Nametag.jpeg" alt="Nametag" style="margin-right: 10px; margin-left: 10px; height:150px">
-            </div>
-            <div class="part" style="display: flex; align-items: center; height:fit-content">
-            <img src="images/Calibration2.jpeg" alt="Calibration Print" style="margin-right: 10px; width: 150px; height: 150px;">
-            <img src="images/Calibration1.jpeg" alt="Calibration Print" style="margin-right: 10px; width: 150px; height: 150px;">
-            <div>
-                <p style="font-size: large; font-weight:bold">Part 2: Calibration (“torture”) print</p>
-                <p style="text-align:left; text-indent: 40px; padding: 3px;margin-top:0%;">     I believe this print went very well, and I'm satisfied enough with the final outcome that it is by far my favorite. I really love the "furry" texture that came out around its ears! I know that these "mini strings" are technically not supposed to be there, but I think they are a great unintended detail. Also, this "webbing" is so thin that it would be able to be brushed off easily if I did not like it. The details turned out really nicely, and although there is not as much definition on the face as some people might like, I think that this was the intended result of the design and the little details on the face are still clear enough to effectively communicate the features of the cat. I was especially impressed by how well the printer handled the overhangs. The bridges were a little rough, but not to the point of failure. And in terms of testing the printer’s capabilities, I think this was a successful result.
-                </p>
-            </div>
-            </div>
-            <div class="part" style="display: flex; align-items: center;">
-            <img src="images/Assist1.jpg" alt="Assistive Device" style="margin-right: 10px; width: 150px; height: 150px;">
-            <img src="images/Assist2.jpg" alt="Assistive Device" style="margin-right: 10px; width: 150px; height: 150px;">
+  <header>
+    <h1>ENGR-11a: Introduction to Design Methodology</h1>
+    <nav>
+      <ul>
+        <li><a href="#pj1">Project 1</a></li>
+        <li><a href="#pj2">Project 2</a></li>
+        <li><a href="#pj3">Project 3</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div>
-                <p style="font-size: large; font-weight:bold">Part 3: Open-source assistive devices</p>
-                <p style="text-align:left; text-indent: 40px; padding: 3px;margin-top:0%;">     This print had more challenges. It is supposed to be a light switch extender that can help people with mobility issues (arthritis, limited grip strength, finger dexterity) and other disabilities to use the light switch. Unfortunately, some of the supports collapsed inside during printing, leaving completely unusable. When I first saw it, I thought I could pull it out, but it is too stuck to easily pop off (and I no longer had the clippers to help with this). Surprisingly this blockage was only at the start of the hole and the deeper part is clear, so maybe if I can still get it out someone then it could work. In that scenario I would still have some problems because the opening is still smaller that the average light switches I see and I would have to do some trial and error to make it compatible with a switch. The finish, especially on the top, looked very “3D printed” and I wished there were ways to make it smoother; maybe sanding or coating would help. On the bright side... it’s easy to locate in the dark and works as a good prototype. For a decorative or more permanent version, I would obviously hope for larger, and more polished options. I do think this print is a failure because the main functionality is compromised. But, if I were to print it again, I would try to make it slightly larger and with supports that could detach easier.
-                </p>
+  <main>
+    <!-- PROJECT 1 -->
+    <section id="pj1">
+      <h2>Project 1: Introduction to 3D Printing</h2>
 
-            </div>
-            <img src="images/Assist3.jpg" alt="Assistive Device" style="margin-right: 10px; margin-left: 15px; width: 120px;">
-            </div>
-        </section>
-        </section>
-        <section id="pj2">
-            <h2 style="font-size:25px;"">Project 2: Creating & Remixing 3D Designs</h2>
-                <div>
-                    <p style="font-size: large; font-weight:bold">CAD orientation</p>
-                    <p style="text-align:left; text-indent: 40px; padding: 3px;margin-top:0%;">My goal in the first </p>
-                </div>
-                <div>
-                    <p style="font-size: large; font-weight:bold">Design Research and Planning</p>
-                    <p style="text-align:left; text-indent: 40px; padding: 3px;margin-top:0%;">This is the 3D model I choose to remix</p>
-                    <img src="images/DogTreatModel.png" alt="Dog Treat Sketch" style="margin-right: 10px; margin-left: 15px; width: 120px;">
-                    <img src="images/DogTreatModelRender.png" alt="Dog Treat Sketch" style="margin-right: 10px; margin-left: 15px; width: 120px;">
-                    <p style="text-align:left; text-indent: 40px; padding: 3px;margin-top:0%;">This is the sketch of how I wanted to change it</p>
-                    <img src="images/dog-treat-sketch.png" alt="Dog Treat Sketch" style="margin-right: 10px; margin-left: 15px; width: 120px;">
-                </div>
-                <div>
-                    <p style="font-size: large; font-weight:bold">Tinkercad remix</p>
-                    <p style="text-align:left; text-indent: 40px; padding: 3px;margin-top:0%;">Lots of problems with this print. I had many failed attempts but  what eventually got it working was a 4hr print in the MakerLab. In this version I fixed a gap in between some of the components. Although, the true reasions for so many failures might have been because of low bed adhesion (I did not want to add more time to the printing process) because they failed before they even reached the stage where they had to handle this gap.</p>
-                </div>
-                <div>
-                    <p style="font-size: large; font-weight:bold">Fusion remix</p>
-                    <p style="text-align:left; text-indent: 40px; padding: 3px;margin-top:0%;">This print actually functions successfully, but it needed some extra love and attention to reach this status. It did not have issues with printing, but that came at the cost of adding all  the genereated supports. And this was definately an excess of support because it took 30 min of clipping awway at it for all the supports to come off. Then the twist would not work so I had to sand the sides down, and it now turns really nice ly (not too tight or too loose)</p>
+      <div class="part">
+        <div>
+          <p style="font-weight:bold">Part 1: Nametag</p>
+          <p>
+            I would consider this print successful, although there are noticeable flaws. It came out legible which is the most important element, but there were noticeable flaws. Mainly I had problems with some stringing that I had to clip off afterward. It’s not the cleanest result but it still serves its purpose. I think if I scaled it up a little then this problem would not be a concern. If I did this again I would also slow down the print speed for cleaner edges, and polish or paint the surface for a more clean appearance.
+          </p>
+        </div>
+        <img src="images/Nametag.jpeg" alt="Nametag" />
+      </div>
 
-                </div>
-        </section>
-        <section id="pj3">
-            <h2 style="font-size:25px;"">Project 3: Form and Fit for Electronics</h2>
-                <p>Assembly</p>
-                <p>Design and 3D Print an Enclosure</p>
-                <p>Design and laser cut an enclosure</p>
-        </section>
-    </main>
-    <footer>
-    </footer>
-</body>
-</html>
+      <div class="part">
+        <img src="images/Calibration2.jpeg" alt="Calibration Print" />
+        <img src="images/Calibration1.jpeg" alt="Calibration Print" />
+        <div>
+          <p style="font-weight:bold">Part 2:
