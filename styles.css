@@ -141,7 +141,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 2rem;
-      margin-top: 1rem;
+      margin-top: 0;
     }
 
     .project-row p {
