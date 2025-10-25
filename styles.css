@@ -128,3 +128,11 @@ footer {
   section h2 { font-size: 1.4rem; }
   .part img, .project-row img { width: 100%; max-width: 100%; }
 }
+
+/* Fix uneven Fusion Remix images */
+#pj2 .project-row img {
+  flex: 1 1 30%;
+  max-width: 30%;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+}
