@@ -79,9 +79,8 @@ p[style*="font-weight:bold"] { font-size: 1.2rem; color: var(--primary); }
 .part,
 .project-row {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: top;
-  justify-items: center;
   gap: 1.25rem;
   margin: 1rem 0;
 }
@@ -136,4 +135,5 @@ footer {
   max-width: 30%;
   object-fit: contain;
   aspect-ratio: 1 / 1;
+  flex-wrap: wrap;
 }
