@@ -81,7 +81,7 @@ p[style*="font-weight:bold"] { font-size: 1.2rem; color: var(--primary); }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   justify-items: left;
   gap: 1.25rem;
   margin: 1rem 0;
