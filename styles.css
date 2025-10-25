@@ -130,7 +130,7 @@ footer {
 }
 
 /* Fix uneven Fusion Remix images */
-#pj2 .project-row img {
+.project-row-small img {
   flex: 1 1 30%;
   max-width: 30%;
   object-fit: contain;
