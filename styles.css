@@ -72,7 +72,7 @@ section h2 {
 }
 
 /* PARAGRAPHS */
-p { font-size: 1rem; margin: 0.5rem 0; line-height: 1.6; justify-content: left;}
+p { font-size: 1rem; margin: 0.5rem 0; line-height: 1.6; }
 p[style*="font-weight:bold"] { font-size: 1.2rem; color: var(--primary); }
 
 /* IMAGE + TEXT SECTIONS */
