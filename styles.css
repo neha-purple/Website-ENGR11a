@@ -120,15 +120,6 @@ footer {
   text-align: center; background: var(--primary); color: var(--light);
   padding: 1rem 0; font-size: 0.9rem; margin-top: auto;
 }
-
-/* MOBILE TWEAKS */
-@media (max-width: 700px) {
-  header h1 { font-size: 1.9rem; }
-  section { padding: 1.25rem; }
-  section h2 { font-size: 1.4rem; }
-  .part img, .project-row img { width: 100%; max-width: 100%; }
-}
-
 /* Fix uneven Fusion Remix images */
 .project-row-small img {
   flex: 1 1 30%;
