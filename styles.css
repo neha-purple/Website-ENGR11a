@@ -73,13 +73,12 @@ section h2 {
 
 /* PARAGRAPHS */
 p { font-size: 1rem; margin: 0.5rem 0; line-height: 1.6; }
-p[style*="font-weight:bold"] { font-size: 1.2rem; color: var(--primary); }
+p[style*="font-weight:bold"] { font-size: 1.2rem; color: var(--primary); justify-self: flex-start;}
 
 /* IMAGE + TEXT SECTIONS */
 .part,
 .project-row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: left;
   align-items: center;
   gap: 1.25rem;
