@@ -166,13 +166,11 @@ p[style*="font-weight:bold"] {
   /* Slightly larger */
   color: var(--primary);
   /* Primary color */
-  justify-content: left;
+  justify-self: left;
 }
 
 /* PART CONTAINERS (for project parts) */
 .part {
-  margin-bottom: 2rem;
-  /* Space between project parts */
   width: 100%;
   /* Full width of container */
   flex-direction: row;
