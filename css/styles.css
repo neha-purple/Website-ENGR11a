@@ -175,6 +175,10 @@ p[style*="font-weight:bold"] {
   /* Space between project parts */
   width: 100%;
   /* Full width of container */
+  flex-direction: row;
+  /* Stack sections horizontally */
+  display: flex;
+  /* Flexbox layout */
 }
 
 /* PROJECT ROW - for text and single image side by side */
