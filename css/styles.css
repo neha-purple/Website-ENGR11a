@@ -166,6 +166,7 @@ p[style*="font-weight:bold"] {
   /* Slightly larger */
   color: var(--primary);
   /* Primary color */
+  justify-content: left;
 }
 
 /* PART CONTAINERS (for project parts) */
@@ -183,7 +184,7 @@ p[style*="font-weight:bold"] {
   flex-wrap: wrap;
   /* Allow wrapping on small screens */
   flex-direction: row;
-    /* Stack sections horizontally */
+  /* Stack sections horizontally */
   gap: 1.5rem;
   /* Space between items */
   align-items: flex-start;
@@ -226,6 +227,8 @@ p[style*="font-weight:bold"] {
   /* Flexbox layout */
   flex-wrap: wrap;
   /* Allow wrapping */
+  flex-direction: row;
+  /* Horizontal layout */
   gap: 1rem;
   /* Space between images */
   justify-content: center;
@@ -258,7 +261,7 @@ p[style*="font-weight:bold"] {
 .part img:hover,
 .project-row img:hover,
 .project-row-small img:hover {
-  transform: scale(1.03);
+  transform: scale(1.2);
   /* Slight zoom on hover */
 }
 
