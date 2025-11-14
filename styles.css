@@ -252,7 +252,7 @@ p {
 .project-row-small img {
   flex: 1 1 30%;
   /* Grow, shrink, base 30% width */
-  min-width: 250px;
+  min-width: 200px;
   /* Minimum width before stacking */
   max-width: 100%;
   /* Don't exceed container */
