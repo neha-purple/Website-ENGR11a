@@ -164,10 +164,13 @@ p {
 .part-title {
   font-size: 1.2rem;
   /* Slightly larger */
+  font-weight: bold;
+  /* Bold text */
   color: var(--primary);
   /* Primary color */
   margin-bottom: 0.2rem;
   /* Remove the big spacing under titles */
+  justify-content: left;
 }
 
 /* PART CONTAINERS (for project parts) */
