@@ -169,7 +169,25 @@ p[style*="font-weight:bold"] {
   margin-bottom: 0.2rem;
   /* Remove the big spacing under titles */
 }
+/* DIAGNOSTIC STYLES - Add this temporarily */
+.part {
+  border: 2px solid red !important;
+  /* This will show part boundaries */
+}
 
+.part-title {
+  border: 2px solid blue !important;
+  /* This will show title boundaries */
+  margin: 0 0 10px 0 !important;
+  padding: 0 !important;
+}
+
+.project-row {
+  border: 2px solid green !important;
+  /* This will show project row boundaries */
+  margin: 0 !important;
+  padding: 0 !important;
+}
 /* PART CONTAINERS (for project parts) */
 .part {
   width: 100%;
