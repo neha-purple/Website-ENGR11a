@@ -166,7 +166,7 @@ p[style*="font-weight:bold"] {
   /* Slightly larger */
   color: var(--primary);
   /* Primary color */
-  justify-self: left;
+  justify-items: left;
 }
 
 /* PART CONTAINERS (for project parts) */
@@ -191,8 +191,6 @@ p[style*="font-weight:bold"] {
   /* Space between items */
   align-items: flex-start;
   /* Align items to top */
-  margin: 1rem 0;
-  /* Vertical spacing */
 }
 
 /* Text content in project rows */
@@ -263,7 +261,7 @@ p[style*="font-weight:bold"] {
 .part img:hover,
 .project-row img:hover,
 .project-row-small img:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
   /* Slight zoom on hover */
 }
 
