@@ -254,9 +254,9 @@ p {
   /* Grow, shrink, base 30% width */
   min-width: 200px;
   /* Minimum width before stacking */
-  max-width: 100%;
+  max-width: 90%;
   /* Don't exceed container */
-  height: 250px;
+  height: 230px;
   /* Fixed height for consistency */
   border-radius: 12px;
   /* Rounded corners */
