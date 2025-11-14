@@ -228,6 +228,8 @@ p {
   /* Hover animation */
   object-fit: cover;
   /* Crop image to fit container */
+  margin: 0px;
+  /* No extra margin */
 }
 
 /* IMAGE GALLERY STYLES - for multiple images */
