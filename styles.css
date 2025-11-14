@@ -196,7 +196,7 @@ p {
   /* Stack sections horizontally */
   gap: 1.5rem;
   /* Space between items */
-  align-items: flex-start;
+  align-items: center;
   /* Align items to top */
 }
 
