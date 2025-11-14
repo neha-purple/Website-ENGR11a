@@ -144,7 +144,7 @@ section h2 {
   /* Medium-large size */
   text-align: center;
   /* Center aligned */
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   /* Space below heading */
   border-bottom: 3px solid var(--accent);
   /* Accent underline */
