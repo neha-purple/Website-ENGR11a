@@ -140,7 +140,7 @@ section:hover {
 section h2 {
   color: var(--primary);
   /* Primary color */
-  font-size: 1.8rem;
+  font-size: 2rem;
   /* Medium-large size */
   text-align: center;
   /* Center aligned */
