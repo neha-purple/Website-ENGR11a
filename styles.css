@@ -113,7 +113,7 @@ section {
   /* White background */
   width: 100%;
   /* Full width */
-  max-width: 950px;
+  max-width: 1250px;
   /* Maximum width */
   border-radius: 12px;
   /* Rounded corners */
@@ -158,6 +158,7 @@ p {
   /* Base font size */
   line-height: 1.6;
   /* Improved readability */
+  margin-top: 0;
 }
 
 /* Bold paragraph styling (for project part titles) */
