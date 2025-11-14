@@ -161,7 +161,7 @@ p {
 }
 
 /* Bold paragraph styling (for project part titles) */
-p[style*="font-weight:bold"] {
+.part-title {
   font-size: 1.2rem;
   /* Slightly larger */
   color: var(--primary);
@@ -172,13 +172,14 @@ p[style*="font-weight:bold"] {
 
 /* PART CONTAINERS (for project parts) */
 .part {
-    border: 2px solid red !important;
-  width: 100%;
-  /* Full width of container */
-  flex-direction: row;
-  /* Stack sections horizontally */
   display: flex;
   /* Flexbox layout */
+  width: 100%;
+  /* Full width of container */
+  flex-direction: column;
+  /* Stack sections horizontally */
+  gap: 0.5rem;
+  /* Space between items */
 }
 
 /* PROJECT ROW - for text and single image side by side */
