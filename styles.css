@@ -161,6 +161,7 @@ p {
   line-height: 1.6;
   /* Improved readability */
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Bold paragraph styling (for project part titles) */
