@@ -2,8 +2,10 @@
 :root {
   --main-bg: #fedee9;
   /* Main background color */
-  --primary: #761a45;
+  --primary: #973a66;
   /* Primary brand color */
+  --primary-header: #873a5ed1;
+  /* Primary header color */
   --light: #ffffff;
   /* Light text/background */
   --text: #54334c;
@@ -167,9 +169,9 @@ p {
   /* Slightly larger */
   font-weight: bold;
   /* Bold text */
-  color: var(--primary);
+  color: var(--primary-header);
   /* Primary color */
-  margin-bottom: 0.2rem;
+  margin-bottom: 0;
   /* Remove the big spacing under titles */
   justify-content: left;
 }
