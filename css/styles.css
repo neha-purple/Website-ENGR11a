@@ -162,7 +162,7 @@ p {
 
 /* Bold paragraph styling (for project part titles) */
 .part-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   /* Slightly larger */
   font-weight: bold;
   /* Bold text */
