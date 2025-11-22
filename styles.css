@@ -209,6 +209,8 @@ p {
   /* Take available space */
   min-width: 300px;
   /* Minimum width before wrapping */
+  text-indent: 30px;
+  /* Indent first line */
 }
 
 /* Images in project rows */
