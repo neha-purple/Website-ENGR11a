@@ -213,6 +213,15 @@ p {
   /* Indent first line */
 }
 
+.part-bold p {
+  flex: 1;
+  /* Take available space */
+  min-width: 300px;
+  /* Minimum width before wrapping */
+  text-indent: 30px;
+  /* Indent first line */
+}
+
 /* Images in project rows */
 .project-row img {
   flex: 1;
